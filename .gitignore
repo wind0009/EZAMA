@@ -1,0 +1,7 @@
+afco-web/node_modules/
+afco-web/.next/
+afco-web/out/
+afco-web/.vercel/
+afco-web/*.tsbuildinfo
+afco-web/.env*
+.DS_Store

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="�quipe AFCO sur le terrain">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="55%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect y="520" width="1600" height="380" fill="url(#grass)"/>
+  <line x1="0" y1="700" x2="1600" y2="700" stroke="#ffffff" stroke-width="4" opacity="0.35"/>
+  <circle cx="800" cy="700" r="90" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.35"/>
+  <g opacity="0.9">
+    <rect x="260" y="430" width="90" height="110" rx="12" fill="#facc15"/>
+    <rect x="370" y="430" width="90" height="110" rx="12" fill="#facc15"/>
+    <rect x="480" y="430" width="90" height="110" rx="12" fill="#facc15"/>
+    <rect x="590" y="430" width="90" height="110" rx="12" fill="#facc15"/>
+    <rect x="700" y="430" width="90" height="110" rx="12" fill="#facc15"/>
+    <rect x="810" y="430" width="90" height="110" rx="12" fill="#facc15"/>
+    <rect x="920" y="430" width="90" height="110" rx="12" fill="#facc15"/>
+    <rect x="1030" y="430" width="90" height="110" rx="12" fill="#facc15"/>
+    <rect x="1140" y="430" width="90" height="110" rx="12" fill="#facc15"/>
+    <rect x="1250" y="430" width="90" height="110" rx="12" fill="#facc15"/>
+  </g>
+  <rect x="500" y="760" width="600" height="70" rx="8" fill="#1e3a8a" stroke="#facc15" stroke-width="3"/>
+  <text x="800" y="805" text-anchor="middle" fill="#facc15" font-family="Arial Black, Arial, sans-serif" font-size="34">AFCO  �QUIPE U15+</text>
+</svg>

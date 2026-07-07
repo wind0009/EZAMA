@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+:root {
+  --afco-blue: #0b1742;
+  --afco-blue-soft: #182b6b;
+  --afco-yellow: #f6c900;
+  --afco-yellow-soft: #ffe777;
+  --afco-ink: #08102b;
+  --background: #f3f5f9;
+  --foreground: #111827;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: var(--afco-yellow);
+  color: var(--afco-ink);
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid var(--afco-yellow);
+  outline-offset: 4px;
+}
+
+.page-shell {
+  @apply mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-24;
+}
+
+.hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(6, 13, 39, 0.98) 0%, rgba(11, 23, 66, 0.88) 43%, rgba(11, 23, 66, 0.36) 100%),
+    linear-gradient(0deg, rgba(6, 13, 39, 0.78) 0%, transparent 45%);
+}
+
+.sport-grid {
+  background-image:
+    linear-gradient(rgba(246, 201, 0, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(246, 201, 0, 0.06) 1px, transparent 1px);
+  background-size: 46px 46px;
+}
+
+.noise-layer {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E");
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+}
+
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.24);
+}
+
+.section-reveal {
+  animation: rise-in 0.8s both;
+}
+
+@supports (animation-timeline: view()) {
+  .section-reveal {
+    animation-timeline: view();
+    animation-range: entry 8% cover 28%;
+  }
+}
+
+.marquee-track {
+  width: max-content;
+  animation: ticker 28s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(34px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ticker {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes pulse-ring {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(246, 201, 0, 0.42);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(246, 201, 0, 0);
+  }
+}
+
+.pulse-ring {
+  animation: pulse-ring 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}

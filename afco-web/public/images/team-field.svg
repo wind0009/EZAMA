@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="�quipe AFCO � l'entra�nement">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect y="500" width="1200" height="300" fill="#a16207" opacity="0.5"/>
+  <g opacity="0.92">
+    <rect x="180" y="300" width="70" height="95" rx="10" fill="#facc15"/>
+    <rect x="270" y="300" width="70" height="95" rx="10" fill="#facc15"/>
+    <rect x="360" y="300" width="70" height="95" rx="10" fill="#facc15"/>
+    <rect x="450" y="300" width="70" height="95" rx="10" fill="#facc15"/>
+    <rect x="540" y="300" width="70" height="95" rx="10" fill="#facc15"/>
+    <rect x="630" y="300" width="70" height="95" rx="10" fill="#facc15"/>
+    <rect x="720" y="300" width="70" height="95" rx="10" fill="#facc15"/>
+    <rect x="810" y="300" width="70" height="95" rx="10" fill="#facc15"/>
+    <rect x="900" y="300" width="70" height="95" rx="10" fill="#facc15"/>
+    <rect x="990" y="300" width="70" height="95" rx="10" fill="#facc15"/>
+  </g>
+  <text x="600" y="680" text-anchor="middle" fill="#fef9c3" font-family="Arial Black, Arial, sans-serif" font-size="28">ACAD�MIE FOOTBALL  OUAHIGOUYA</text>
+</svg>
