@@ -1,6 +1,4 @@
 [build]
   base = "afco-web"
   command = "npm run build"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+  publish = "afco-web/out"
